@@ -240,22 +240,30 @@ section {
 }
 
 .btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
+.btn-color-2{
+  background: rgb(0,0,0);
   color: white;
 }
 
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
+.btn-color-1:hover,.btn-color-2:hover {
+  background: rgb(255,255,255);
+  color:black;
 }
 
-.btn-color-2 {
-  background: none;
+.btn-color-2:hover,.btn-color-1:hover{
+  border: rgb(0,0,0) 0.1rem solid;
 }
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+.btn-color-2.project-btn {
+    color: white;
 }
+.btn-color-1.project-btn:hover,.btn-color-2.project-btn:hover {
+    background: rgb(255,255,255);
+    color:black;
+  }
+  
+  .btn-color-2:hover.project-btn,.btn-color-1.project-btn:hover{
+    border: rgb(0,0,0) 0.1rem solid;
+  }
 
 .btn-container {
   gap: 1rem;
